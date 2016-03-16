@@ -1,5 +1,6 @@
 header#header {
   @include clearfix;
+  padding: $base-spacer 0;
   #logo {
     float: left;
   }

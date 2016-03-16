@@ -1,11 +1,10 @@
 (function ($, Drupal, window, document, undefined) {
 
 // Menu toggle
-function menuToggle() {
-  $('#toggle-main-menu').click(function(){
-    $('ul.nice-menu li.menuparent ul').removeClass('open');
-    $('#header-region').toggleClass('show');
-    $('#toggle-main-menu .bar').toggleClass('animate');
+function menuToggle(toggle, el, animate) {
+  $(toggle).click(function(){
+    $(el).toggleClass('show');
+    $(animate).toggleClass('animate');
   });
 }
 
@@ -14,7 +13,7 @@ Drupal.behaviors.basic = {
 
     $(window).ready(function() {
       // Call functions
-      menuToggle();
+      menuToggle('#toggle-main-menu', '#header-region', '#toggle-main-menu .bar');
       
     });
 
