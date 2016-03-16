@@ -13,14 +13,16 @@ var gulp = require('gulp'),
 // PostCSS plugins
 var autoprefixer = require('autoprefixer'),
     lost = require('lost'),
-    rucksack = require('rucksack-css');
+    rucksack = require('rucksack-css'),
+    cssnano = require('cssnano');
 
 gulp.task('styles', function() {
     
     var plugins = [
         lost,
         rucksack,
-        autoprefixer(config.postcssPlugins.autoprefixer.browsers)
+        autoprefixer(config.postcssPlugins.autoprefixer.browsers),
+        cssnano({safe: true, discardComments: {removeAll: true}})
     ];
 
     gulp.src(config.src.scss)
