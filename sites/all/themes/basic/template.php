@@ -81,14 +81,14 @@ function basic_preprocess_html(&$vars) {
   if (theme_get_setting('basic_ie_enabled')) {
     $basic_ie_enabled_versions = theme_get_setting('basic_ie_enabled_versions');
     if (in_array('ie8', $basic_ie_enabled_versions, TRUE)) {
-      drupal_add_css(path_to_theme() . '/css/ie8.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 8', '!IE' => FALSE), 'preprocess' => FALSE));
+      drupal_add_css(path_to_theme() . '/css/ie/ie8.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 8', '!IE' => FALSE), 'preprocess' => FALSE));
       drupal_add_js(path_to_theme() . '/js/build/selectivizr-min.js');
     }
     if (in_array('ie9', $basic_ie_enabled_versions, TRUE)) {
-      drupal_add_css(path_to_theme() . '/css/ie9.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 9', '!IE' => FALSE), 'preprocess' => FALSE));
+      drupal_add_css(path_to_theme() . '/css/ie/ie9.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 9', '!IE' => FALSE), 'preprocess' => FALSE));
     }
     if (in_array('ie10', $basic_ie_enabled_versions, TRUE)) {
-      drupal_add_css(path_to_theme() . '/css/ie10.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 10', '!IE' => FALSE), 'preprocess' => FALSE));
+      drupal_add_css(path_to_theme() . '/css/ie/ie10.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 10', '!IE' => FALSE), 'preprocess' => FALSE));
     }
   }
 

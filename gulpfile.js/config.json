@@ -1,0 +1,19 @@
+{
+  "src": {
+    "root": ".",
+    "scss": "./sites/all/themes/basic/scss/**/*.scss"
+  },
+  "dest": {
+    "root": ".",
+    "css": "./sites/all/themes/basic/css"
+  },
+  "postcssPlugins": {
+    "autoprefixer": {
+      "browsers": [
+        "last 10 versions",
+        "Explorer >= 8",
+        "Firefox > 3"
+      ]
+    }
+  } 
+}

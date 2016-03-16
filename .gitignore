@@ -4,3 +4,8 @@ sites/localhost/settings.php
 # Ignore paths that contain user-generated content.
 sites/*/files
 sites/*/private
+
+# Ignore node and sass files
+node_modules
+npm-debug.log
+.sass-cache
