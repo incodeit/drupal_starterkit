@@ -6,4 +6,11 @@ $p-size: 14px;
 $base-spacer: 20px;
 $main-container: 1170px;
 
-// Colors
+// Media query
+$container: $main-container + $base-spacer*2 ;
+$tablet-pr: 768px;
+
+// Menu toggle
+$bar-width: 20px;
+$bar-spacing: 6px;
+$bar-height: 2px;

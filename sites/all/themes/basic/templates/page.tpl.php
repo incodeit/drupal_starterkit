@@ -28,6 +28,11 @@
         <?php endif; ?>
       <?php endif; ?>
 
+      <!-- Toggle menu -->
+      <div id="toggle-main-menu">
+        <div class="bar"></div>
+      </div>
+
       <?php if ($page['header']): ?>
         <div id="header-region">
           <?php print render($page['header']); ?>

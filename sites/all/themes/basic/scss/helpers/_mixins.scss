@@ -6,10 +6,6 @@
   }
 }
 
-.clearfix {
-  @include clearfix; 
-}
-
 @mixin container {
   max-width: $main-container;
   margin-left: auto;
@@ -18,8 +14,19 @@
   margin-right: auto;
   width: auto;
   @extend .clearfix;
+  @media screen and (max-width: $container) {
+    padding-left: $base-spacer;
+    padding-right: $base-spacer;
+  }
 }
 
-.container {
-  @include container;
+@mixin reset_all {
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-shadow: none;
+  text-shadow: none;
+  text-decoration: none;
 }

@@ -5,17 +5,11 @@
 }
 
 .container {
-  max-width: 1170px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
+  @include container;
 }
-.container:after {
-  content: "";
-  display: table;
-  clear: both;
+
+.clearfix {
+  @include clearfix; 
 }
 
 @media screen and (min-width: 20em) {
@@ -196,27 +190,3 @@
     margin-right: 0;
   }
 }
-
-#footer {
-  float: none;
-  clear: both;
-}
-
-#header,
-#footer,
-.mission,
-.breadcrumb,
-.node {
-  clear: both;
-}
-
-.inner {
-  padding: 0;
-}
-
-#navigation li {
-  list-style-type: none;
-  display: inline-block;
-}
-
-/*# sourceMappingURL=layout.css.map */
