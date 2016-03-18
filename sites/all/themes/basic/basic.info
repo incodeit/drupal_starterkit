@@ -28,6 +28,7 @@ features[] = secondary_menu
 ; Stylesheets
 stylesheets[all][] = css/style.css
 stylesheets[print][] = css/print.css
+; stylesheets[print][] = css/patch.css
 
 ; Scripts
 scripts[] = js/vendor/modernizr.js

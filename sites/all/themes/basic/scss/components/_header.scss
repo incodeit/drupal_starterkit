@@ -25,14 +25,45 @@ header#header {
         width: auto;
         margin-left: $base-spacer;
         @media screen and (max-width: $tablet-pr) {
+          padding: 0 !important;
+        }
+        > a {
+          @media screen and (max-width: $tablet-pr) {
+            padding: $base-spacer 0;
+            border-bottom: 1px solid #eee;
+          }
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+        &.menuparent {
+          > ul {
+            background: #fff;
+            @media screen and (max-width: $tablet-pr) {
+              display: none;
+              position: relative;
+              visibility: hidden;
+              width: 100%;
+              border: 0;
+              top: 0;
+            }
+            &.open {
+              display: block;
+              visibility: visible;
+              margin: 0;
+              li {
+                width: 100% !important;
+                float: none !important;
+              }
+            }
+          }
+        }
+        @media screen and (max-width: $tablet-pr) {
           display: block;
           width: 100%;
           text-align: center;
           margin-left: 0;
           padding: $base-spacer/2 0;
-        }
-        &:first-child {
-          margin-left: 0;
         }
       }
     }
