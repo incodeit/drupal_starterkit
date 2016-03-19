@@ -10,12 +10,12 @@ function menuToggle(toggle, el, animate) {
 }
 
 
-
-function menuToggleSubmenu() {
-  $('li.menuparent > a').on('click' function() {
-    
-  });
-}
+// WIP
+//function menuToggleSubmenu() {
+//  $('li.menuparent > a').on('click', function() {
+//    
+//  });
+//}
 
 Drupal.behaviors.basic = {
   attach: function(context, settings) {

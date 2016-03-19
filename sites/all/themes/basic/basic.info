@@ -31,7 +31,7 @@ stylesheets[print][] = css/print.css
 ; stylesheets[print][] = css/patch.css
 
 ; Scripts
-scripts[] = js/vendor/modernizr.js
+scripts[] = js/build/modernizr.js
 scripts[] = js/scripts.js
 
 settings[basic_tabs] = 1
